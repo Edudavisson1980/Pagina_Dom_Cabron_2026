@@ -1,0 +1,461 @@
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Cabeçalho com estilo e animação */
+        @keyframes fadeInSlide {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+        header {
+            position: relative;
+            width: 100%;
+            height: calc(150px + 40px * 2);
+            background: url('Cabecalho_1.webp') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Alinha à esquerda */
+            justify-content: center;
+            padding-top: 40px;
+            padding-left: 20px;
+            padding-bottom: 40px;
+        }
+    
+        <style>
+            /* Reset global para margens e paddings */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        
+            html, body {
+                width: 100%;
+                height: 100%;
+                overflow-x: hidden;
+            }
+        
+            img, video {
+                max-width: 100%;
+                height: auto;
+            }
+        
+
+        header img {
+            max-height: 200px;
+            margin-right: 20px;
+            margin-left: 40px;
+        }
+    
+        .title-container {
+            flex-grow: 1;
+            text-align: left;
+            padding-left: 20px;
+        }
+    
+        .title-container h1,
+        .title-container h2 {
+            margin: 0;
+            font-family: 'Rock Salt', cursive;
+            color: #f4f4f4;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid #fff;
+        }
+    
+        .title-container h1 {
+            font-size: 2.5rem;
+            animation: fadeInSlide 1s ease-out forwards, typingEffect 3s steps(30) 1s forwards;
+        }
+    
+        .title-container h2 {
+            font-size: 1.5rem;
+            animation: fadeInSlide 1s ease-out forwards, typingEffect 3s steps(30) 2s forwards;
+        }
+    
+        @keyframes typingEffect {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+    
+        .section {
+            padding: 20px;
+        }
+    
+        
+        .videos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .video {
+            flex: 1 1 100px;
+            margin: 10px;
+        }
+        .video-title {
+            text-align: center;
+            margin-top: 5px;
+            font-family: "Kanit", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+        .contact {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .apresentacoes {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        
+        .image-content {
+            flex: 1;
+            text-align: center;
+        }
+        .image-content img {
+            max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+            height: auto; /* Mantém a proporção da imagem */
+            max-height: 300px; /* Define uma altura máxima para a imagem */
+            width: auto; /* Mantém a proporção da imagem */
+        }
+       
+        .image-content_2 {
+            flex: 1;
+            text-align: center;
+        }
+        .image-content_2 img {
+            max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+            height: auto; /* Mantém a proporção da imagem */
+            max-height: 250px; /* Define uma altura máxima para a imagem */
+            width: auto; /* Mantém a proporção da imagem */
+        }
+       
+        .video-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            background: #e0e0e0;
+        }
+        
+        .video {
+            width: 100%;
+            max-width: 200px; /* Ajuste o tamanho máximo conforme necessário */
+            margin-bottom: 20px;
+        }
+
+        .texto {
+            font-family: 'Playwrite', cursive; /* Aplicar fonte Rock Salt ao título */
+            font-size: 23px;
+           
+        }
+
+        // ESTILIZAÇÃO DE FORMULARIO
+
+        .feedback form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feedback .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .feedback label {
+            margin-top: 10px;
+        }
+
+        .feedback input, .feedback textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 18px
+        }
+
+        .feedback .form-row input {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .feedback textarea {
+            margin-top: 10px;
+            width: 100%;
+            height: 100px;
+        }
+
+        .feedback button {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .feedback button:hover {
+            background-color: #555;
+        }
+
+        .comment {
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+
+        }
+
+        .titulo-form {
+            text-align: center; /* Centraliza o texto do título */
+        }
+
+        .data {
+            text-align: center;
+            color: white
+        }
+
+        .nome {
+            text-align: center;
+            color: white
+        }
+
+        .cidade {
+            text-align: center;
+            color: white
+        }
+
+        .comentario {
+            text-align: center;
+            color: white
+        }
+
+        
+
+        // ESTILIZAÇÃO DO FORMULARIO 
+
+        section#feedbackSection {
+            background-image: url('Azul.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        form {
+            background-image: url('Azul.jpg');
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+            form label {
+                display: block;
+                margin-top: 10px;
+            }
+
+            form input, form textarea {
+                width: calc(100% - 20px); /* Ajusta o tamanho do campo com base no padding do formulário */
+                padding: 10px;
+                margin-top: 5px;
+                border: none;
+                border-radius: 5px;
+                box-sizing: border-box;
+                font-size: 16px;
+            }
+
+            form button {
+                margin-top: 10px;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #333;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+                form button:hover {
+                    background-color: #555;
+                }
+
+        .comment {
+            background-image: url('Azul.jpg');
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            color: white;
+        }
+
+        .photo-gallery {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+            .photo-gallery h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+        }
+
+            .gallery img {
+                width: 100%;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 8px;
+                transition: transform 0.2s;
+            }
+
+                .gallery img:hover {
+                    transform: scale(2.50);
+                    object-fit: contain;
+                }
+
+                .footer {
+                    text-align: center;
+                    padding: 10px;
+                    background-color: #f1f1f1;
+                    margin-top: 20px;
+                    font-size: 14px;
+                    color: #333;
+                  }    
+        
+
+                /* Media Queries for Responsiveness */
+       @media (max-width: 1200px) {
+        .videos {
+            justify-content: space-between;
+        }
+    }
+    @media (max-width: 992px) {
+        .video {
+            flex: 1 1 40%; /* Dois vídeos por linha */
+            max-width: 40%; /* Ajustar a largura máxima para 40% */
+        }
+    }
+    @media (max-width: 768px) {
+        .video {
+            flex: 1 1 48%; /* Ajustar para dois vídeos por linha em telas menores */
+            max-width: 48%; /* Ajustar a largura máxima para 48% */
+        }
+        header {
+            flex-direction: column;
+            align-items: center;
+        }
+        header img {
+            margin-bottom: 10px;
+        }
+        .title-container {
+            text-align: center;
+        }
+        .apresentacoes {
+            flex-direction: column;
+        }
+        .text-content h2 {
+            padding-right: 0;
+            text-align: center;
+        }
+        .text-content {
+            padding-right: 0;
+            text-align: left;
+        }    
+        .image-content {
+            text-align: center;
+        }
+
+               
+
+        @media (max-width: 576px) {
+            .video {
+                flex: 2 1 40%; /* Um vídeo por linha */
+                max-width: 40%; /* Ajustar a largura máxima para 100% */
+            }
+
+            header img {
+                max-height: 160px; /* Aumentar o tamanho do logo para telas menores */
+            }
+
+            .title-container h1 {
+                font-size: 1.5em;
+            }
+
+            .title-container h2 {
+                font-size: 1.2em;
+            }
+
+            .section {
+                padding: 10px;
+            }
+
+            .titulo {
+                text-align: center
+            }
+
+            .feedback {
+                background-color: #f4f4f4;
+                padding: 20px;
+                border-radius: 5px;
+                margin-top: 20px;
+            }
+
+            .feedback h2 {
+                font-family: 'Rock Salt', cursive;
+                color: #333;
+            }
+
+        @media (max-width: 768px) {
+    form input {
+        flex: 1 1 100%;
+    }
+    form textarea {
+        flex: 1 1 100%;
+    }        
+    }
+
+
+    
+        @media (max-width: 768px) {
+    header {
+          flex-direction: column;
+          align-items: center;
+        }
+
+    header img {
+          margin-bottom: 10px;
+        }
+
+        .title-container {
+            text-align: center;
+        }
+    }
+
+</style>
